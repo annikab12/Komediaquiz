@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragen</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container m-5">
+        <h1 class="text-center mb-4">Fragen</h1>
+        
+        <!-- Kategorie 1 -->
+        <div class="card mb-3">
+            <div class="card-header">
+                <h2>Kategorie 1</h2>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" data-category="K1">
+                        <h5>Frage 1.1</h5>
+                        <p>Text 1.1</p>
+                        <div class="likert-scale">
+                            <label><input type="radio" name="q1.1" value="1">1</label>
+                            <label><input type="radio" name="q1.1" value="2">2</label>
+                            <label><input type="radio" name="q1.1" value="3">3</label>
+                            <label><input type="radio" name="q1.1" value="4">4</label>
+                            <label><input type="radio" name="q1.1" value="5">5</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item" data-category="K1">
+                        <h5>Frage 1.2</h5>
+                        <p>Text 1.2</p>
+                        <div class="likert-scale">
+                            <label><input type="radio" name="q1.2" value="1">1</label>
+                            <label><input type="radio" name="q1.2" value="2">2</label>
+                            <label><input type="radio" name="q1.2" value="3">3</label>
+                            <label><input type="radio" name="q1.2" value="4">4</label>
+                            <label><input type="radio" name="q1.2" value="5">5</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Kategorie 2 -->
+        <div class="card mb-3">
+            <div class="card-header">
+                <h2>Kategorie 2</h2>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" data-category="K2">
+                        <h5>Frage 2.1</h5>
+                        <p>Text 2.1</p>
+                        <div class="likert-scale">
+                            <label><input type="radio" name="q2.1" value="1">1</label>
+                            <label><input type="radio" name="q2.1" value="2">2</label>
+                            <label><input type="radio" name="q2.1" value="3">3</label>
+                            <label><input type="radio" name="q2.1" value="4">4</label>
+                            <label><input type="radio" name="q2.1" value="5">5</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item" data-category="K2">
+                        <h5>Frage 2.2</h5>
+                        <p>Text 2.2</p>
+                        <div class="likert-scale">
+                            <label><input type="radio" name="q2.2" value="1">1</label>
+                            <label><input type="radio" name="q2.2" value="2">2</label>
+                            <label><input type="radio" name="q2.2" value="3">3</label>
+                            <label><input type="radio" name="q2.2" value="4">4</label>
+                            <label><input type="radio" name="q2.2" value="5">5</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Kategorie 3 -->
+        <div class="card mb-3">
+            <div class="card-header">
+                <h2>Kategorie 3</h2>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" data-category="K3">
+                        <h5>Frage 3.1</h5>
+                        <p>Text 3.1</p>
+                        <div class="likert-scale">
+                            <label><input type="radio" name="q3.1" value="1">1</label>
+                            <label><input type="radio" name="q3.1" value="2">2</label>
+                            <label><input type="radio" name="q3.1" value="3">3</label>
+                            <label><input type="radio" name="q3.1" value="4">4</label>
+                            <label><input type="radio" name="q3.1" value="5">5</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item" data-category="K3">
+                        <h5>Frage 3.2</h5>
+                        <p>Text 3.2</p>
+                        <div class="likert-scale">
+                            <label><input type="radio" name="q3.2" value="1">1</label>
+                            <label><input type="radio" name="q3.2" value="2">2</label>
+                            <label><input type="radio" name="q3.2" value="3">3</label>
+                            <label><input type="radio" name="q3.2" value="4">4</label>
+                            <label><input type="radio" name="q3.2" value="5">5</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="btn btn-primary mt-3" onclick="saveAnswers()">Antworten speichern</button>
+
+        <div class="container m-5">
+            <h1 class="text-center mb-4">Auswertung</h1>
+            <canvas id="myRadarChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
