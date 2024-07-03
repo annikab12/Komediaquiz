@@ -79,22 +79,22 @@ const data = {
         label: 'Deine Antworten',
         data: categorySums,
         fill: true,
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgb(255, 99, 132)',
-        pointBackgroundColor: 'rgb(255, 99, 132)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(255, 99, 132)'
+        backgroundColor: 'rgba(236, 114, 6, 0.2)',  // Lighter shade with 20% opacity
+        borderColor: 'rgb(236, 114, 6)',  // Primary color
+        pointBackgroundColor: 'rgb(236, 114, 6)',  // Primary color
+        pointBorderColor: '#fff',  // White border for points
+        pointHoverBackgroundColor: '#fff',  // White background when hovering over points
+        pointHoverBorderColor: 'rgb(236, 114, 6)'  // Primary color border when hovering
     }, {
         label: 'Vergleichswert',
         data: [18, 18, 10, 18, 18, 18, 16],
         fill: true,
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgb(54, 162, 235)',
-        pointBackgroundColor: 'rgb(54, 162, 235)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(54, 162, 235)'
+        backgroundColor: 'rgba(169, 169, 169, 0.2)',  // Light gray with 20% opacity
+        borderColor: 'rgb(169, 169, 169)',  // Gray color
+        pointBackgroundColor: 'rgb(169, 169, 169)',  // Gray color
+        pointBorderColor: '#fff',  // White border for points
+        pointHoverBackgroundColor: '#fff',  // White background when hovering over points
+        pointHoverBorderColor: 'rgb(169, 169, 169)'  // Gray color border when hovering
     }]
 };
 
