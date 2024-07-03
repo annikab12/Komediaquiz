@@ -72,6 +72,11 @@ function saveAnswers() {
     updateChart();
 }
 
+function showResults() {
+    saveAnswers();
+    document.getElementById("resultsContainer").style.display = 'block';
+    document.getElementById("resultsContainer").scrollIntoView({ behavior: 'smooth'});
+}
 
 const data = {
     labels: categorynames,
@@ -102,6 +107,9 @@ const config = {
     type: 'radar',
     data: data,
     options: {
+        animation: {
+            duration: 0
+        },
         elements: {
             line: {
                 borderWidth: 3
@@ -128,4 +136,7 @@ const myRadarChart = new Chart(
 function updateChart() {
     myRadarChart.data.datasets[0].data = categorySums;
     myRadarChart.update();
-}
+};
+
+
+showResults();
