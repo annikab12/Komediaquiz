@@ -139,4 +139,4 @@ function updateChart() {
 };
 
 
-showResults();
+//showResults(); //only for debug
