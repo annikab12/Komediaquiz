@@ -24,6 +24,7 @@ function generateCategoryCard(category, index) {
         cardHtml += generateLikertScale(name, question.weight, question.inverted);
         cardHtml += '</li>';
     });
+    //Test
 
     cardHtml += '</ul></div></div>';
     return cardHtml;
