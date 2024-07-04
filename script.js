@@ -24,7 +24,6 @@ function generateCategoryCard(category, index) {
         cardHtml += generateLikertScale(name, question.weight, question.inverted);
         cardHtml += '</li>';
     });
-    //Test
 
     cardHtml += '</ul></div></div>';
     return cardHtml;
@@ -88,7 +87,7 @@ const data = {
         pointHoverBorderColor: 'rgb(236, 114, 6)'  // Primary color border when hovering
     }, {
         label: 'Vergleichswert',
-        data: [18, 18, 10, 18, 18, 18, 16],
+        data: [18, 15, 10, 18, 18, 18, 12],
         fill: true,
         backgroundColor: 'rgba(169, 169, 169, 0.2)',  // Light gray with 20% opacity
         borderColor: 'rgb(169, 169, 169)',  // Gray color
