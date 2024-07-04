@@ -20,7 +20,7 @@ function generateCategoryCard(category, index) {
         const name = 'q' + index + '.' + (questionIndex + 1);
         cardHtml += '<li class="list-group-item" data-category="' + category.name + '">';
         cardHtml += '<h5>' + question.text + '</h5>';
-        //cardHtml += '<p>Gewichtung ' + question.weight + '</p>'; //only for debug
+        cardHtml += '<p>Gewichtung ' + question.weight + '</p>'; //only for debug
         cardHtml += generateLikertScale(name, question.weight, question.inverted);
         cardHtml += '</li>';
     });
@@ -139,4 +139,4 @@ function updateChart() {
 };
 
 
-//showResults(); //only for debug
+showResults(); //only for debug
